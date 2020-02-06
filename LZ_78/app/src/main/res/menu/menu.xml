@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/reset"
+        android:title="reset"
+        android:icon="@drawable/ic_autorenew_black_24dp"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/menu"
+        android:title="Menu"
+        android:icon="@drawable/ic_close_black_24dp"
+        app:showAsAction="always"/>
+
+</menu>

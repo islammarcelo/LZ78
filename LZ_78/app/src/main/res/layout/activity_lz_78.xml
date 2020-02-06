@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LZ_78"
+    android:background="#2196F3">
+
+    <Button
+        android:id="@+id/compress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compress"
+        android:textAllCaps="false"
+        android:textSize="23dp"
+        android:textColor="#fff"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/buttonshap1"
+        android:onClick="compress" />
+
+    <Button
+        android:id="@+id/decompress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decompress"
+        android:textAllCaps="false"
+        android:textSize="23dp"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/compress"
+
+        android:background="@drawable/buttonshap1"
+        android:onClick="decompress"/>
+
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="100dp"
+        android:hint="Enter your example"
+        android:textColorHint="#8B1616"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittextshap"/>
+
+    <TextView
+        android:id="@+id/tv_dic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dictionary:"
+        android:textColor="#000"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_pair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pair:"
+        android:textColor="#000"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dic"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"
+         />
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="String: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pair"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/tv_result_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pair"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="120dp"
+        android:text=" "
+        android:textSize="20dp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/tv_result_dict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="20dp"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dic"
+        android:layout_marginLeft="50dp"
+         />
+
+    <TextView
+        android:id="@+id/tv_result_pair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="20dp"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pair" />
+
+
+
+</android.support.constraint.ConstraintLayout>
